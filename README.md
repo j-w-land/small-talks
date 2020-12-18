@@ -1,0 +1,2 @@
+# small-talks
+wa project
