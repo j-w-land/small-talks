@@ -1,0 +1,5 @@
+client/node_modules/
+server/node_modules/
+apidoc/
+server/routes/api.js
+WA-projekti-raportti-juha-weiland.docx

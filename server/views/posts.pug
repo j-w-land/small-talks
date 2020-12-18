@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1= title
+
+  ul
+  each post in post_list
+    li #{post.author}: #{post.content}
+
+  else
+    li There are no posts yet.
+
+  h2 Submit New Post
+  form(method='POST' action='/posts/create')
+  div.form-group
+              label(for='user') User:
+              input#name.form-control(type='text', placeholder='Username' name='user')
+            div.form-group
+              label(for='name') Author:
+              input#name.form-control(type='text', placeholder='Your name' name='author')
+            div.form-group
+              label(for='content') Post text:
+              input#content.form-control(type='text' name='content')
+            button.btn.btn-primary(type='submit') Submit new post
